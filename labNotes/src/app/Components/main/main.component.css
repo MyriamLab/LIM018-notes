@@ -17,10 +17,6 @@
 
 /* ** */
 .sectionContainerMain {
-  padding: 3rem;
+  padding: 2.8rem;
 }
 
-.sectionContainerMain > h2 {
-  font-size: 1rem;
-  color: #16f8ff;
-}

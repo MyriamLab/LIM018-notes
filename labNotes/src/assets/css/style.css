@@ -43,10 +43,18 @@ body {
 h1, h2, h3, h4, p {
     font-family: 'Inter', sans-serif;  
 }
-h1 {
-  font-size: 3rem;
+
+h1, h2 {
   color: #16f8ff;
-  margin-bottom: 2rem;
+}
+
+h1 { 
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem; 
 }
 
 h3 {
