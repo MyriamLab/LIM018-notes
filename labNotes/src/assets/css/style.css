@@ -1,49 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&family=Titillium+Web&display=swap');
 
+/* font-family: 'Inter', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif; */
+
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .flex-row {
-    display: flex;
+  display: flex;
 }
 
-
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.padding-top { 
+    padding-top: 0.2rem;
+}
+
+.margin-top {
+    margin-top: 1.8rem;
+}
+
+.margin-top-3 {
+    margin-top: 3rem;
 }
 /* font-family: 'Inter', sans-serif; */
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Titillium Web', sans-serif; */
 
 body {
-    background-color: #1E1E1E;
-} 
+  background-color: #1e1e1e;
+}
 
-
+h1, h2, h3, h4, p {
+    font-family: 'Inter', sans-serif;  
+}
 h1 {
-    font-size: 2rem;
-    font-family: 'Inter', sans-serif; 
-    color: #16F8FF;
-    margin-bottom: 3rem;;
+  font-size: 3rem;
+  color: #16f8ff;
+  margin-bottom: 2rem;
 }
 
 h3 {
-    color: #ffff;
-    font-size:1.5rem;
-    align-items: center;
-    margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #B2B2B2;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+h4, p {
+  color: #B2B2B2;
+  font-style: normal;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+ 
 }
 
 p {
-    color: #B2B2B2;
+    font-weight: 500;
+   
 }
 
+h4 {
+    font-weight: 700;
+    
+}
+
+
 button {
-    width: 19.5rem;
-    height: 2.5rem;
-    border-radius: 0.6rem;
-    border: none;
-    margin-bottom: 0.5rem;
+  width: 19.5rem;
+  height: 2.4rem;
+  border-radius: 0.6rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  border: 1px solid #B2B2B2;
+  background-color: #1E1E1E;
+  color: #FFFFFF;   
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
