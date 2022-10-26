@@ -25,7 +25,6 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/style.css"
-
             ],
             "scripts": []
           },
@@ -95,6 +94,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "labNotes:build:production",
+            "firebaseProject": "labnotes-2a364",
+            "firebaseHostingSite": "labnotes-2a364"
           }
         }
       }

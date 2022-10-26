@@ -1,18 +1,15 @@
-.containerWelcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 2rem; 
-    height: 100vh;
-    width: 100%;
+#btnGoogle {
+    background-color: #ffff;
+    color: #18212C;
 }
 
-.containerWelcomeElements {
-    max-width: 80%;
-    margin: auto;
-    padding: 1rem;
+.newUser {
+    text-align: center;
+    justify-content: center;
 }
-
+.newUser > h4 {
+    margin-left: 1rem;
+}
 
 /* #btnGoogle {
     background-color: #E24A45;

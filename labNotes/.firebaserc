@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "labnotes-2a364": {
+      "hosting": {
+        "labNotes": [
+          "labnotes-2a364"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "labnotes-2a364"
+  }
+}

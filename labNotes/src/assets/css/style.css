@@ -9,6 +9,8 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: border-box;
 }
 
+
+
 .flex-row {
   display: flex;
 }
@@ -32,15 +34,19 @@ font-family: 'Titillium Web', sans-serif; */
 .margin-top-3 {
     margin-top: 3rem;
 }
-/* font-family: 'Inter', sans-serif; */
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Titillium Web', sans-serif; */
+
+.block {
+  display: block;
+}
+/*
+CLASES GLOBALES
+*/
 
 body {
   background-color: #1e1e1e;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, label, #idRegisterBnt, #idLoginBnt {
     font-family: 'Inter', sans-serif;  
 }
 
@@ -73,31 +79,80 @@ h4, p {
   font-style: normal;
   font-size: 0.8rem;
   line-height: 0.8rem;
- 
 }
 
 p {
     font-weight: 500;
-   
 }
 
 h4 {
-    font-weight: 700;
-    
+    font-weight: 700;   
 }
-
 
 button {
   width: 19.5rem;
   height: 2.4rem;
   border-radius: 0.6rem;
   border: none;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
   border: 1px solid #B2B2B2;
   background-color: #1E1E1E;
   color: #FFFFFF;   
   font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
   line-height: 1.5rem;
+}
+
+/*
+REUTILZANDO CLASES 
+*/
+.containerWelcome, .containerRegister, .containerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 2rem; 
+  height: 100vh;
+  width: 100%;
+}
+
+.containerWelcomeElements, .containerRegisterElements .containerLoginElements{
+  max-width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* 
+FORMULARIOS LOGIN Y REGISTER
+*/
+
+.formRegister{
+  margin-top: 2.5rem;
+}
+
+label {
+  color: #ffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+input {
+  width: 19.5rem;
+  height: 2.4rem;
+  border-radius: 5px;
+  border: solid 1px #5E5E5E;
+  margin: 0.7rem 0 0.7rem 0;
+  background-color: #1e1e1e;
+}
+
+#idRegisterBnt, #idLoginBnt {
+  background-color: #B2B2B2;
+  color: #18212C;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 28px;
 }
