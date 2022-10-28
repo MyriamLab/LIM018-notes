@@ -1,14 +1,9 @@
-#btnGoogle {
-    background-color: #ffff;
-    color: #18212C;
-}
-
 .newUser {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 .newUser > h4 {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 /* #btnGoogle {

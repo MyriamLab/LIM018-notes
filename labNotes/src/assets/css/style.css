@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&family=Titillium+Web&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto&family=Titillium+Web&display=swap");
 
 /* font-family: 'Inter', sans-serif;
 font-family: 'Roboto', sans-serif;
@@ -9,8 +9,6 @@ font-family: 'Titillium Web', sans-serif; */
   box-sizing: border-box;
 }
 
-
-
 .flex-row {
   display: flex;
 }
@@ -20,19 +18,19 @@ font-family: 'Titillium Web', sans-serif; */
 }
 
 .space-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
-.padding-top { 
-    padding-top: 0.2rem;
+.padding-top {
+  padding-top: 0.2rem;
 }
 
 .margin-top {
-    margin-top: 1.8rem;
+  margin-top: 1.8rem;
 }
 
 .margin-top-3 {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .block {
@@ -46,26 +44,34 @@ body {
   background-color: #1e1e1e;
 }
 
-h1, h2, h3, h4, p, label, #idRegisterBnt, #idLoginBnt {
-    font-family: 'Inter', sans-serif;  
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+#idRegisterBnt,
+#idLoginBnt {
+  font-family: "Inter", sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #16f8ff;
 }
 
-h1 { 
-    font-size: 3rem;
-    margin-bottom: 2rem;
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 
 h3 {
   font-size: 1.2rem;
-  color: #B2B2B2;
+  color: #b2b2b2;
   align-items: center;
   margin-bottom: 3rem;
   font-style: normal;
@@ -74,19 +80,20 @@ h3 {
   line-height: 1.8rem;
 }
 
-h4, p {
-  color: #B2B2B2;
+h4,
+p {
+  color: #b2b2b2;
   font-style: normal;
   font-size: 0.8rem;
   line-height: 0.8rem;
 }
 
 p {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 h4 {
-    font-weight: 700;   
+  font-weight: 700;
 }
 
 button {
@@ -95,9 +102,9 @@ button {
   border-radius: 0.6rem;
   border: none;
   margin-bottom: 0.8rem;
-  border: 1px solid #B2B2B2;
-  background-color: #1E1E1E;
-  color: #FFFFFF;   
+  border: 1px solid #b2b2b2;
+  background-color: #1e1e1e;
+  color: #ffffff;
   font-style: normal;
   font-weight: 600;
   font-size: 0.8rem;
@@ -107,16 +114,19 @@ button {
 /*
 REUTILZANDO CLASES 
 */
-.containerWelcome, .containerRegister, .containerLogin {
+.containerWelcome,
+.containerRegister,
+.containerLogin {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  padding: 2rem; 
+  align-items: center;
+  padding: 2rem;
   height: 100vh;
   width: 100%;
 }
 
-.containerWelcomeElements, .containerRegisterElements .containerLoginElements{
+.containerWelcomeElements,
+.containerRegisterElements .containerLoginElements {
   max-width: 80%;
   margin: auto;
   padding: 1rem;
@@ -126,7 +136,7 @@ REUTILZANDO CLASES
 FORMULARIOS LOGIN Y REGISTER
 */
 
-.formRegister{
+.formRegister {
   margin-top: 2.5rem;
 }
 
@@ -142,17 +152,23 @@ input {
   width: 19.5rem;
   height: 2.4rem;
   border-radius: 5px;
-  border: solid 1px #5E5E5E;
+  border: solid 1px #5e5e5e;
   margin: 0.7rem 0 0.7rem 0;
   background-color: #1e1e1e;
 }
 
-#idRegisterBnt, #idLoginBnt {
-  background-color: #B2B2B2;
-  color: #18212C;
+#idRegisterBnt,
+#idLoginBnt {
+  background-color: #b2b2b2;
+  color: #18212c;
   margin-top: 1rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 28px;
+}
+
+#btnGoogle {
+  background-color: #ffffff;
+  color: #000000;
 }

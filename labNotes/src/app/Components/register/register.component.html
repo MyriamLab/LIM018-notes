@@ -13,36 +13,33 @@
       <h3>Únete para <br />recordarlo todo</h3>
     </div>
 
-    <form action="" class="formRegister">
-      <label for="idRegisterName" class="block"
-        >Nombre Completo</label>
-        <input
-          id="idRegisterName"
-          type="text"
-          placeholder=" Nombre Apellido"
-          required
-        />
-     
+    <form action="" class="formRegister" (submit)="register($event)">
+      <label for="idRegisterName" class="block">Nombre Completo</label>
+      <input
+        id="idRegisterName"
+        type="text"
+        placeholder=" Nombre Apellido"
+        required
+        [formControl]="idRegisterName"
+      />
 
       <label for="idRegisterEmail" class="block"
-        >Dirección de correo electrónico</label>
-        <input
-          id="idRegisterEmail"
-          type="text"
-          placeholder=" Correo electrónico"
-          required
-        />
-     
+        >Dirección de correo electrónico</label
+      >
+      <input
+        id="idRegisterEmail"
+        type="text"
+        placeholder=" Correo electrónico"
+        required
+      />
 
-      <label for="idRegisterPassword" class="block"
-        >Crear una contraseña</label>
-        <input
-          id="idRegisterPassword"
-          type="text"
-          placeholder=" Mínimo de 8 caracteres"
-          required
-        />
-     
+      <label for="idRegisterPassword" class="block">Crear una contraseña</label>
+      <input
+        id="idRegisterPassword"
+        type="text"
+        placeholder=" Mínimo de 8 caracteres"
+        required
+      />
 
       <button id="idRegisterBnt" type="submit" class="block">Unirse</button>
     </form>
