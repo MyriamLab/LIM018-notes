@@ -13,15 +13,16 @@
         <h3>Inicia sesión para <br/>recordarlo todo</h3>
       </div>
   
-      <form action="" class="formRegister">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" action="" class="formRegister">
      
         <label for="idLoginEmail" class="block"
           >Dirección de correo electrónico</label>
           <input
             id="idLoginEmail"
             type="text"
-            placeholder="Correo electrónico"
+            placeholder=" Correo electrónico"
             required
+            formControlName="Email"
           />
        
         <label for="idLoginPassword" class="block"
@@ -31,10 +32,11 @@
             type="text"
             placeholder=" ********"
             required
+            formControlName="Password"
           />
        
   
-        <button id="idLoginBnt" type="submit" class="block">Ingresar</button>
+        <button id="idLoginBnt" type="submit" [disabled]="!loginForm.valid" class="block">Ingresar</button>
       </form>
     </div>
     <!-- fin containerRegisterElements -->

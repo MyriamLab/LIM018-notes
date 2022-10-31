@@ -48,6 +48,7 @@ h1,
 h2,
 h3,
 h4,
+a,
 p,
 label,
 #idRegisterBnt,
@@ -80,7 +81,7 @@ h3 {
   line-height: 1.8rem;
 }
 
-h4,
+a,
 p {
   color: #b2b2b2;
   font-style: normal;
@@ -109,6 +110,7 @@ button {
   font-weight: 600;
   font-size: 0.8rem;
   line-height: 1.5rem;
+  cursor: pointer;
 }
 
 /*
@@ -126,7 +128,7 @@ REUTILZANDO CLASES
 }
 
 .containerWelcomeElements,
-.containerRegisterElements .containerLoginElements {
+.containerRegisterElements, .containerLoginElements {
   max-width: 80%;
   margin: auto;
   padding: 1rem;

@@ -13,14 +13,21 @@
       <h3>Únete para <br />recordarlo todo</h3>
     </div>
 
-    <form action="" class="formRegister" (submit)="register($event)">
+    <form
+      [formGroup]="signUpForm"
+      (ngSubmit)="onSubmit()"
+      action=""
+      class="formRegister"
+    >
+      <!--(submit)="register($event)" -->
       <label for="idRegisterName" class="block">Nombre Completo</label>
       <input
         id="idRegisterName"
         type="text"
         placeholder=" Nombre Apellido"
         required
-        [formControl]="idRegisterName"
+        #RegisterName
+        formControlName="Name"
       />
 
       <label for="idRegisterEmail" class="block"
@@ -31,6 +38,8 @@
         type="text"
         placeholder=" Correo electrónico"
         required
+        #RegisterEmail
+        formControlName="Email"
       />
 
       <label for="idRegisterPassword" class="block">Crear una contraseña</label>
@@ -39,9 +48,17 @@
         type="text"
         placeholder=" Mínimo de 8 caracteres"
         required
+        formControlName="Password"
       />
 
-      <button id="idRegisterBnt" type="submit" class="block">Unirse</button>
+      <button
+        id="idRegisterBnt"
+        type="submit"
+        [disabled]="!signUpForm.valid"
+        class="block"
+      >
+        Unirse
+      </button>
     </form>
   </div>
   <!-- fin containerRegisterElements -->

@@ -10,38 +10,30 @@ import { UserService } from 'src/app/Services/user.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  idRegisterName = new FormControl('');
-  idRegisterEmail = new FormControl('');
-  idRegisterPassword = new FormControl('');
   
-  // formReg: FormGroup;
-
+  signUpForm  = new FormGroup ({
+  Name: new FormControl(''),
+  Email:  new FormControl(''),
+  Password: new FormControl('')
+});
+ 
   // aquí inyectamos el servicio UserService
-  constructor( private userService: UserService, private route: Router, private render: Renderer2) { 
-    // this.formReg = new FormGroup({
-    //   idRegisterName: new FormControl(),
-    //   email: new FormControl(),
-    //   password: new FormControl()
-    // }) 
-  }
+  constructor( 
+    private userService: UserService, 
+    private router: Router, 
+    private render: Renderer2) {}
 
   ngOnInit(): void {
-    
   } 
 
-  register(event: any ) {
-    event.preventDefault()
-    // console.log(this.formReg.value, "soy formReg!!")
-    console.log(this.idRegisterName, "soy nome!!")
-    console.log(this.idRegisterEmail, "soy email!!")
-    console.log(this.idRegisterPassword, "soy password!!")
-    
+  onSubmit() {
+    // TODO: Use EventEmitter with form value
+    console.log(this.signUpForm.value); //recibo todos los valores de los campos del form
+    this.userService.userSingUp(this.signUpForm.value)
+    .then( (response)=> {
+       console.log(response)})
+       this.router.navigate(['/login'])
+    .catch( (error): any => console.log(error, "error!!!"))
 
-    
-    // //formReg declarado en la línea 16. Trae a email y password 
-    // this.userService.userRegister(this.formReg.value)
-    // .then( (resp)=> { console.log(resp)})
-    // .catch( (error): any => console.log(error, "error!!!"))
   }
-
 }
