@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/Services/user.service'; // *
 
 @Component({
   selector: 'app-welcome',
@@ -8,7 +9,12 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor( 
+    private userService: UserService, 
+    private router: Router )
+    // 
+   {}
+
 
   changeViewLogin() {
     this.router.navigate(['/login']);  
@@ -17,4 +23,11 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  LoginWithGoogle() {
+     this.userService.loginWithGoogle()
+    .then( (response)=> {
+       console.log(response)})
+       this.router.navigate(['/main'])
+    .catch( (error): any => console.log(error, "LoginWithGoogleError!!!"))
+  }
 }

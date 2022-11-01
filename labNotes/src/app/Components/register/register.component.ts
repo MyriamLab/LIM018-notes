@@ -9,6 +9,7 @@ import { UserService } from 'src/app/Services/user.service';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
 export class RegisterComponent implements OnInit {
   
   signUpForm  = new FormGroup ({
