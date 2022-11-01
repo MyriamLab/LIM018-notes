@@ -13,11 +13,13 @@ import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, Googl
     constructor(private auth: Auth) {}
   
 //método para registar el usuario
-    userSingUp({email, password}: any){
+    userSignUp({email, password}: any){
+      console.log("aquí!", email, password)
         return createUserWithEmailAndPassword(this.auth, email, password); //esto viaja a Firebase y se queda registrado como usuario
     }
 //método para logear el usuario
     userLogin({email, password}: any){
+      console.log("aquí Login!", email, password)
       return signInWithEmailAndPassword(this.auth, email, password);
     }
 

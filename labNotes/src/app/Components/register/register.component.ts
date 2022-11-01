@@ -12,9 +12,9 @@ import { UserService } from 'src/app/Services/user.service';
 export class RegisterComponent implements OnInit {
   
   signUpForm  = new FormGroup ({
-  Name: new FormControl(''),
-  Email:  new FormControl(''),
-  Password: new FormControl('')
+  name: new FormControl(''),
+  email:  new FormControl(''),
+  password: new FormControl('')
 });
  
   // aquí inyectamos el servicio UserService
@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
   onSubmit() {
     // TODO: Use EventEmitter with form value
     console.log(this.signUpForm.value); //recibo todos los valores de los campos del form
-    this.userService.userSingUp(this.signUpForm.value)
+    this.userService.userSignUp(this.signUpForm.value)
     .then( (response)=> {
        console.log(response)})
        this.router.navigate(['/login'])

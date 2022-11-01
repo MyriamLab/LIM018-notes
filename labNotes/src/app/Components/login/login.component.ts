@@ -12,8 +12,8 @@ import { UserService } from 'src/app/Services/user.service';
 export class LoginComponent implements OnInit {
 
     loginForm  = new FormGroup ({
-    Email:  new FormControl(''),
-    Password: new FormControl('')
+    email:  new FormControl(''),
+    password: new FormControl('')
   });
    
 
@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
     this.userService.userLogin(this.loginForm.value)
     .then( (response)=> {
        console.log(response)})
+       this.router.navigate(['/main'])
     .catch( (error): any => console.log(error, "errorLogin!!!"))
   }
 }
