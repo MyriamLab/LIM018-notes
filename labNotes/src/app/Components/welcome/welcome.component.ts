@@ -12,7 +12,6 @@ export class WelcomeComponent implements OnInit {
   constructor( 
     private userService: UserService, 
     private router: Router )
-    // 
    {}
 
 
@@ -23,7 +22,7 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  LoginWithGoogle() {
+  loginWithGoogle() {
      this.userService.loginWithGoogle()
     .then( (response)=> {
        console.log(response)})

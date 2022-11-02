@@ -15,6 +15,14 @@
   align-items: flex-start;
 }
 
+.containerElementsMain > div {
+  cursor:pointer;
+}
+
+.containerElementsMain:first-child {
+  margin-top: 2rem;
+}
+
 /* ** */
 .sectionContainerMain {
   padding: 2.8rem;
